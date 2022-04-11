@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Mulish:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family:"mulish","san-serif";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/6240.jpg);
+    background-repeat : no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    width: 100%;
+
+}
+.container{
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    transform: translateX(-50%);
+}
+.container h3{
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.form-control input,
+.form-control textarea{
+    padding: 0.5rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+}
+.form-control input[type="submit"]{
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 300ms all;
+    padding: 1rem;
+}
+.form-control input[type="submit"]:hover{
+    background-color: rgb(219, 163, 163);
+}
+.form-control input~label,
+.form-control textarea~label{
+    position: absolute;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    padding: 0.5rem;
+    transition: 300ms all;
+}
+.form-control input:focus~label,
+.form-control textarea:focus~label,
+.form-control input:focus~label,
+.form-control textarea:focus~label{
+    top:-2rem;
+    color: red;
+    font-size: 1rem;
+}
+.form-control last-child{
+    margin: 0;
+}
