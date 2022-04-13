@@ -1,2 +1,2 @@
 # contact-form
-[click here!](https://ahmet1988.github.io/contact-form/)
+[click here!](https://ahmetaric.github.io/contact-form/)
